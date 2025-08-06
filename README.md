@@ -93,28 +93,6 @@
 - yuzhegan
 - 摘星怪
 
-## 赞助开源
-
-开源不易，如果您觉得工具不错，或许可以试着赞助一下作者的开发哦~
-
----
-| 排名 |         ID          | 赞助金额（元） |
-| :--: | :-----------------: | :------------: |
-|  1   |      **陆沉**       |    1355.5    |
-|  2   | **乡村牛公子** |      976      |
-|  3   |      **柯林斯.民间新秀**      |      696      |
-|  [赞助榜单](https://github.com/honmashironeko/Thanks-for-sponsorship)   |     您的每一份赞助都是作者源源不断的动力！      |      (´∀｀)♡       |
-
----
-![赞助](./assets/赞助.png)
-
-## 代理推荐
-
-- [第一家便宜大碗代理购买，用邀请码注册得5000免费IP+10元优惠券](https://h.shanchendaili.com/invite_reg.html?invite=fM6fVG)
-- [各大运营商流量卡](https://172.lot-ml.com/ProductEn/Index/0b7c9adef5e9648f)
-- [国外匿名代理](https://www.ipmart.io?source=Shironeko)
-
-![Star History Chart](https://api.star-history.com/svg?repos=honmashironeko/ProxyCat&type=Date)
 
 ## Go版本（实验性）
 
