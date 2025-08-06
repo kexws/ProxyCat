@@ -115,3 +115,17 @@
 - [国外匿名代理](https://www.ipmart.io?source=Shironeko)
 
 ![Star History Chart](https://api.star-history.com/svg?repos=honmashironeko/ProxyCat&type=Date)
+
+## Go版本（实验性）
+
+项目新增了一个使用 Go 编写的实验性实现，支持通过 Web 界面手动检测并管理失效代理。
+
+运行方式：
+
+```
+cd go
+go run ./cmd/proxycat
+```
+
+在界面中，检测失败的代理会单独列出，可手动再次检测。如果检测通过，将其恢复到有效列表，否则继续保留在失败列表；同时也支持单独删除或一键删除所有失败代理。
+
