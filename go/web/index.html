@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ProxyCat Go</title>
+</head>
+<body>
+<h1>Add Proxy</h1>
+<form method="POST" action="/add">
+    <input name="address" placeholder="http://1.2.3.4:8080" />
+    <button type="submit">Add</button>
+</form>
+
+<h2>Active Proxies</h2>
+<ul>
+{{range .Active}}
+<li>{{.Address}}</li>
+{{else}}
+<li>None</li>
+{{end}}
+</ul>
+
+<h2>Failed Proxies</h2>
+<ul>
+{{range .Failed}}
+<li>
+    {{.Address}}
+    <form style="display:inline" method="POST" action="/retry">
+        <input type="hidden" name="id" value="{{.ID}}" />
+        <button type="submit">Manual Check</button>
+    </form>
+    <form style="display:inline" method="POST" action="/delete">
+        <input type="hidden" name="id" value="{{.ID}}" />
+        <button type="submit">Delete</button>
+    </form>
+</li>
+{{else}}
+<li>None</li>
+{{end}}
+</ul>
+<form method="POST" action="/deleteAll">
+    <button type="submit">Delete All Failed</button>
+</form>
+</body>
+</html>
+
